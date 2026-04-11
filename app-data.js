@@ -192,7 +192,10 @@ const rdUtilitiesData = {
       ],
       actions: [
         { label: "View Details", href: "./taniumdeploypackager.html" },
-        { label: "Add GitHub Release URL", href: "#" }
+        {
+          label: "Download v1.0",
+          href: "https://github.com/RDUtilities/TaniumDeployPackageBuilder/releases/download/v1.0/TaniumDeployPackager-v1.0.zip"
+        }
       ]
     },
     {
