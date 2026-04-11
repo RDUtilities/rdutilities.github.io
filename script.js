@@ -32,6 +32,25 @@ function createAction(action) {
   return link;
 }
 
+function createNoteContent(parts) {
+  const fragment = document.createDocumentFragment();
+
+  parts.forEach((part) => {
+    if (part.type === "link") {
+      const link = document.createElement("a");
+      link.href = part.href;
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      link.textContent = part.text;
+      fragment.appendChild(link);
+    } else {
+      fragment.appendChild(document.createTextNode(part.text));
+    }
+  });
+
+  return fragment;
+}
+
 function renderProducts() {
   const fragment = document.createDocumentFragment();
 
@@ -48,8 +67,8 @@ function renderProducts() {
     node.querySelector(".product-card__summary").textContent = product.summary;
 
     const note = node.querySelector(".product-card__note");
-    if (product.noteHtml) {
-      note.innerHTML = product.noteHtml;
+    if (product.noteParts) {
+      note.appendChild(createNoteContent(product.noteParts));
       note.classList.add("is-visible");
     } else if (product.note) {
       note.textContent = product.note;

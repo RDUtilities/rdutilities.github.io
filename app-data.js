@@ -207,8 +207,18 @@ const rdUtilitiesData = {
       category: "Game Project",
       summary:
         "A browser-based rummy experience featuring both Shanghai and Nanna's Rummy, playable solo or multiplayer on the web and mobile devices.",
-      noteHtml:
-        "For multiplayer, open <a href=\"https://snrummy-api.onrender.com/health\" target=\"_blank\" rel=\"noreferrer\">https://snrummy-api.onrender.com/health</a> first. Then go to the play site, start a multiplayer session, and create a lobby.",
+      noteParts: [
+        { type: "text", text: "For multiplayer, open " },
+        {
+          type: "link",
+          text: "https://snrummy-api.onrender.com/health",
+          href: "https://snrummy-api.onrender.com/health"
+        },
+        {
+          type: "text",
+          text: " first. Then go to the play site, start a multiplayer session, and create a lobby."
+        }
+      ],
       features: [
         "Choose between two distinct rummy variants",
         "Support for single-player and multiplayer",
