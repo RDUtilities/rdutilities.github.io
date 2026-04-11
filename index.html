@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RDUtilities | Productivity Apps for the Rest of Us</title>
+    <meta
+      name="description"
+      content="RDUtilities builds practical GUI apps that bring powerful command-line workflows to approachable desktop and web experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="RDUtilities home">
+          <img
+            src="./Logos/RDUtilitiesLogo.png"
+            alt="RDUtilities logo"
+            class="brand__logo"
+          />
+        </a>
+        <nav class="topbar__nav" aria-label="Primary">
+          <a href="#products">Products</a>
+          <a href="#story">Why RDUtilities</a>
+          <a href="#updates">Updates</a>
+          <a href="#launch">Launch Plan</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero__copy">
+            <p class="eyebrow">Powerful tools, no terminal required</p>
+            <h1>
+              Desktop utilities that turn advanced IT and productivity work into
+              clear, approachable experiences.
+            </h1>
+            <p class="hero__lede">
+              RDUtilities builds practical software for Windows, macOS, and the
+              web, helping people handle complex tasks with modern GUI tools
+              instead of cryptic command lines.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#products">Explore Apps</a>
+              <a class="button button--secondary" href="#launch">Free Hosting Plan</a>
+            </div>
+            <ul class="hero__stats" aria-label="Company highlights">
+              <li>
+                <strong>10</strong>
+                <span>Apps and game projects</span>
+              </li>
+              <li>
+                <strong>3</strong>
+                <span>Platforms: Windows, macOS, Web</span>
+              </li>
+              <li>
+                <strong>1</strong>
+                <span>Mission: make advanced tools easier</span>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="hero__panel" aria-label="RDUtilities value proposition">
+            <div class="hero-card">
+              <span class="hero-card__label">Built for real-world work</span>
+              <h2>Productivity apps for the rest of us.</h2>
+              <p>
+                From AD lookup and Robocopy scheduling to budgeting, log
+                analysis, and packaging workflows, each app focuses on making
+                specialized tasks easier to discover, use, and repeat.
+              </p>
+              <div class="hero-card__chips">
+                <span>GUI-first</span>
+                <span>Task automation</span>
+                <span>IT friendly</span>
+                <span>Cross-platform</span>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="platform-strip" aria-label="Platform categories">
+          <button class="platform-filter is-active" data-filter="all" type="button">
+            All Products
+          </button>
+          <button class="platform-filter" data-filter="windows" type="button">
+            Windows
+          </button>
+          <button class="platform-filter" data-filter="mac" type="button">
+            macOS
+          </button>
+          <button class="platform-filter" data-filter="web" type="button">
+            Web
+          </button>
+          <button class="platform-filter" data-filter="cross-platform" type="button">
+            Cross-Platform
+          </button>
+        </section>
+
+        <section class="section" id="products">
+          <div class="section-heading">
+            <p class="eyebrow">Product lineup</p>
+            <h2>Showcase your apps in one clean catalog</h2>
+            <p>
+              Each card can link to a GitHub release, demo video, screenshots,
+              documentation page, or blog post. The content is driven by a
+              simple data file so updates stay easy.
+            </p>
+          </div>
+          <div class="products-grid" id="products-grid"></div>
+        </section>
+
+        <section class="section section--story" id="story">
+          <div class="section-heading">
+            <p class="eyebrow">Why RDUtilities</p>
+            <h2>Software that translates expert workflows into approachable tools</h2>
+          </div>
+          <div class="story-grid">
+            <article class="story-card">
+              <h3>Make advanced work feel simple</h3>
+              <p>
+                Many of these products wrap command-line or admin-heavy tasks in
+                an interface that’s easier to learn, safer to repeat, and faster
+                to teach to someone else.
+              </p>
+            </article>
+            <article class="story-card">
+              <h3>Design for the person doing the job</h3>
+              <p>
+                The products focus on usability for real operators: scheduling,
+                presets, exports, templates, and guided workflows instead of
+                memorized syntax.
+              </p>
+            </article>
+            <article class="story-card">
+              <h3>Built across platforms</h3>
+              <p>
+                The catalog already spans Windows, macOS, and the web, which
+                gives the brand a strong story around practical software for
+                mixed-device environments.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="updates">
+          <div class="section-heading">
+            <p class="eyebrow">Updates and posts</p>
+            <h2>Space for launch notes, release news, screenshots, and demos</h2>
+            <p>
+              This section is ready for short announcement posts. We can turn it
+              into a larger blog later, but this gets you a polished starting
+              point quickly.
+            </p>
+          </div>
+          <div class="updates-grid" id="updates-grid"></div>
+        </section>
+
+        <section class="section section--launch" id="launch">
+          <div class="section-heading">
+            <p class="eyebrow">Launch recommendation</p>
+            <h2>Start free with GitHub Pages, keep WordPress as an optional blog later</h2>
+          </div>
+          <div class="launch-grid">
+            <article class="launch-card launch-card--recommended">
+              <span class="badge">Recommended</span>
+              <h3>GitHub Pages</h3>
+              <p>
+                Best fit for this exact site: free hosting, fast loading, easy
+                link-outs to GitHub releases, and simple version control for the
+                site content itself.
+              </p>
+              <ul>
+                <li>Free custom `username.github.io` or project site hosting</li>
+                <li>Great match for GitHub release downloads</li>
+                <li>Easy for me to maintain here in your workspace</li>
+              </ul>
+            </article>
+            <article class="launch-card">
+              <h3>WordPress.com</h3>
+              <p>
+                Better if the main goal becomes frequent blog-style posting and a
+                CMS workflow, but the free tier gives you less design freedom and
+                can feel heavier for a product showcase site.
+              </p>
+              <ul>
+                <li>Good for posting updates manually</li>
+                <li>Less ideal for custom product-grid design on free tier</li>
+                <li>Can still be a later expansion path</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <template id="product-card-template">
+      <article class="product-card">
+        <div class="product-card__header">
+          <img class="product-card__logo" alt="" />
+          <div>
+            <div class="product-card__meta"></div>
+            <h3 class="product-card__title"></h3>
+          </div>
+        </div>
+        <p class="product-card__summary"></p>
+        <ul class="product-card__features"></ul>
+        <div class="product-card__footer">
+          <div class="product-card__tags"></div>
+          <div class="product-card__actions"></div>
+        </div>
+      </article>
+    </template>
+
+    <template id="update-card-template">
+      <article class="update-card">
+        <p class="update-card__type"></p>
+        <h3 class="update-card__title"></h3>
+        <p class="update-card__body"></p>
+      </article>
+    </template>
+
+    <script src="./app-data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
