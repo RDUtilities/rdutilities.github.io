@@ -14,6 +14,7 @@ function createPill(label, className) {
 function createAction(action) {
   const link = document.createElement("a");
   const isDisabled = action.href === "#";
+  const isExternal = /^https?:\/\//.test(action.href);
 
   link.className = `product-link${action.primary ? " product-link--primary" : ""}${
     isDisabled ? " product-link--disabled" : ""
@@ -23,7 +24,7 @@ function createAction(action) {
 
   if (isDisabled) {
     link.setAttribute("aria-disabled", "true");
-  } else {
+  } else if (isExternal) {
     link.target = "_blank";
     link.rel = "noreferrer";
   }
@@ -40,8 +41,20 @@ function renderProducts() {
     node.dataset.filters = product.filterTags.join(" ");
     node.querySelector(".product-card__logo").src = product.logo;
     node.querySelector(".product-card__logo").alt = `${product.name} logo`;
+    if (product.logoClass) {
+      node.querySelector(".product-card__logo").classList.add(product.logoClass);
+    }
     node.querySelector(".product-card__title").textContent = product.name;
     node.querySelector(".product-card__summary").textContent = product.summary;
+
+    const note = node.querySelector(".product-card__note");
+    if (product.noteHtml) {
+      note.innerHTML = product.noteHtml;
+      note.classList.add("is-visible");
+    } else if (product.note) {
+      note.textContent = product.note;
+      note.classList.add("is-visible");
+    }
 
     const meta = node.querySelector(".product-card__meta");
     meta.appendChild(createPill(product.category, "product-chip"));

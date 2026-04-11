@@ -14,46 +14,42 @@ const rdUtilitiesData = {
         "Designed for repeatable and admin-friendly workflows"
       ],
       actions: [
-        { label: "Add GitHub Release URL", href: "#" }
+        { label: "View Details", href: "./robocopy-supertool.html" },
+        {
+          label: "Download v1.5",
+          href: "https://github.com/RDUtilities/RobocopyGUI/releases/download/v1.5/RobocopySuperTool.exe"
+        }
       ]
     },
     {
       name: "AD SuperSearch",
-      logo: "./Logos/ADSuperSearchLogo.png",
-      platforms: ["Windows"],
-      filterTags: ["windows"],
+      logo: "./Logos/ADSuperSearchLogo-WhiteBk.png",
+      platforms: ["Windows", "macOS"],
+      filterTags: ["windows", "mac", "cross-platform"],
       category: "Active Directory",
       summary:
-        "Search users, groups, and computers in Active Directory without relying on RSAT-heavy workflows.",
+        "Search users, groups, and computers in Active Directory on both Windows and macOS without relying on RSAT-heavy workflows.",
       features: [
-        "Fast AD lookups for multiple object types",
-        "Built to simplify common support and admin tasks",
-        "Reduces the need for command-line or RSAT tooling"
+        "Fast AD lookups for users, groups, and computers",
+        "Available in both Windows and Mac editions",
+        "Built to simplify common support and admin tasks"
       ],
       actions: [
-        { label: "Add GitHub Release URL", href: "#" }
-      ]
-    },
-    {
-      name: "AD SuperSearch Mac Edition",
-      logo: "./Logos/ADSuperSearchMacEditionLogo.png",
-      platforms: ["macOS"],
-      filterTags: ["mac"],
-      category: "Active Directory",
-      summary:
-        "A macOS version of AD SuperSearch that brings the same approachable Active Directory lookup workflow to Mac users.",
-      features: [
-        "Search AD users, groups, and computers from macOS",
-        "Keeps core experience aligned with the Windows version",
-        "Useful for mixed-platform IT environments"
-      ],
-      actions: [
-        { label: "Add GitHub Release URL", href: "#" }
+        { label: "View Details", href: "./ad-supersearch.html" },
+        {
+          label: "Download PC v2.5",
+          href: "https://github.com/RDUtilities/ADSearchToolNew/releases/download/v2.5-security/AD.Super.Search.v2.5.zip"
+        },
+        {
+          label: "Download Mac v2.0.0",
+          href: "https://github.com/RDUtilities/ADSuperSearchToolME/releases/download/v2.0.0/ADSuperSearch-Mac-Edition-Release.zip"
+        }
       ]
     },
     {
       name: "LogSuperTool",
       logo: "./Logos/LogSuperToolLogo.png",
+      logoClass: "product-card__logo--wide",
       platforms: ["Windows", "macOS"],
       filterTags: ["windows", "mac", "cross-platform"],
       category: "Log Analysis",
@@ -65,7 +61,15 @@ const rdUtilitiesData = {
         "Export results for sharing and follow-up"
       ],
       actions: [
-        { label: "Add GitHub Release URL", href: "#" }
+        { label: "View Details", href: "./logsupertool.html" },
+        {
+          label: "Download PC v1.0.1",
+          href: "https://github.com/RDUtilities/LogSuperTool/releases/download/v1.0.1/LogSuperTool-v1.0.1-win-x64-single.zip"
+        },
+        {
+          label: "Download Mac v1.0.0",
+          href: "https://github.com/RDUtilities/LogSuperTool-MacEdition/releases/download/v1.0.0/LogSuperToolMacEdition-1.0.0.dmg"
+        }
       ]
     },
     {
@@ -82,7 +86,11 @@ const rdUtilitiesData = {
         "Save presets for repeatable setups"
       ],
       actions: [
-        { label: "Add GitHub Release URL", href: "#" }
+        { label: "View Details", href: "./soundchoice-supertool.html" },
+        {
+          label: "Download v1.0",
+          href: "https://github.com/RDUtilities/SoundChoiceSuperTool/releases/download/v1.0.0/SoundChoiceSuperTool-v1.0.0-macOS.zip"
+        }
       ]
     },
     {
@@ -99,7 +107,11 @@ const rdUtilitiesData = {
         "Supports built-in voices and Azure Neural voices"
       ],
       actions: [
-        { label: "Add GitHub Release URL", href: "#" }
+        { label: "View Details", href: "./speakshot.html" },
+        {
+          label: "Download v1.1",
+          href: "https://github.com/RDUtilities/SpeakShot/releases/download/v1.1/SpeakShot-v1.1.zip"
+        }
       ]
     },
     {
@@ -116,7 +128,11 @@ const rdUtilitiesData = {
         "Use CSV templates to preload software sets"
       ],
       actions: [
-        { label: "Add GitHub Release URL", href: "#" }
+        { label: "View Details", href: "./winget-supertool.html" },
+        {
+          label: "Download v1.0.0",
+          href: "https://github.com/RDUtilities/WinGet-Super-Tool/releases/download/v1.0.0/WinGetTool.exe"
+        }
       ]
     },
     {
@@ -133,7 +149,11 @@ const rdUtilitiesData = {
         "Restart servers after patch windows complete"
       ],
       actions: [
-        { label: "Add GitHub Release URL", href: "#" }
+        { label: "View Details", href: "./steamgameserver-patch-tool.html" },
+        {
+          label: "Download v1.0.0",
+          href: "https://github.com/RDUtilities/SteamGameServerPatchTool/releases/download/v1.0.0/SteamGameServerPatchTool-v1.0.0-win-x64.zip"
+        }
       ]
     },
     {
@@ -150,7 +170,11 @@ const rdUtilitiesData = {
         "Generate charts and category totals"
       ],
       actions: [
-        { label: "Add GitHub Release URL", href: "#" }
+        { label: "View Details", href: "./dollars-and-sense.html" },
+        {
+          label: "Download v3.1",
+          href: "https://github.com/RDUtilities/DollarsAndSense/releases/download/v3.1-smartbulk/DollarsAndSense-v3.1.zip"
+        }
       ]
     },
     {
@@ -167,24 +191,29 @@ const rdUtilitiesData = {
         "Help fill package logic with AI-assisted analysis"
       ],
       actions: [
+        { label: "View Details", href: "./taniumdeploypackager.html" },
         { label: "Add GitHub Release URL", href: "#" }
       ]
     },
     {
       name: "Shanghai / Nanna's Rummy",
-      logo: "./Logos/RDUtilitiesLogo.png",
+      logo: "./Logos/Shanghai & Nanna's Rummy logo.png",
+      logoClass: "product-card__logo--wide",
       platforms: ["Web", "Mobile"],
       filterTags: ["web"],
       category: "Game Project",
       summary:
         "A browser-based rummy experience featuring both Shanghai and Nanna's Rummy, playable solo or multiplayer on the web and mobile devices.",
+      noteHtml:
+        "For multiplayer, open <a href=\"https://snrummy-api.onrender.com/health\" target=\"_blank\" rel=\"noreferrer\">https://snrummy-api.onrender.com/health</a> first. Then go to the play site, start a multiplayer session, and create a lobby.",
       features: [
         "Choose between two distinct rummy variants",
         "Support for single-player and multiplayer",
         "Designed to play on web and mobile"
       ],
       actions: [
-        { label: "Play Online", href: "https://onrender.com" }
+        { label: "View Details", href: "./shanghai-nannas-rummy.html" },
+        { label: "Play Online", href: "http://snrummy-web.onrender.com" }
       ]
     }
   ],

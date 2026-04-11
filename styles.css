@@ -156,6 +156,7 @@ body::before {
 .story-card p,
 .launch-card p,
 .product-card__summary,
+.product-card__note,
 .update-card__body,
 .hero-card p {
   color: var(--muted);
@@ -396,19 +397,26 @@ body::before {
 
 .product-card__header {
   display: grid;
-  grid-template-columns: 88px 1fr;
-  gap: 16px;
+  grid-template-columns: 132px 1fr;
+  gap: 18px;
   align-items: center;
 }
 
 .product-card__logo {
-  width: 88px;
-  height: 88px;
+  width: 132px;
+  height: 132px;
   object-fit: contain;
   border-radius: 24px;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(248, 243, 229, 0.96));
   padding: 10px;
+}
+
+.product-card__logo--wide {
+  width: 172px;
+  height: 132px;
+  max-width: 100%;
+  justify-self: start;
 }
 
 .product-card__meta {
@@ -437,6 +445,27 @@ body::before {
   padding-left: 20px;
   color: var(--muted);
   line-height: 1.65;
+}
+
+.product-card__note {
+  display: none;
+  margin: -4px 0 0;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  background: rgba(245, 182, 19, 0.14);
+  border: 1px solid rgba(245, 182, 19, 0.32);
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.product-card__note.is-visible {
+  display: block;
+}
+
+.product-card__note a {
+  color: var(--blue);
+  font-weight: 800;
+  text-decoration-thickness: 2px;
 }
 
 .product-card__footer {
@@ -515,9 +544,209 @@ body::before {
   background: linear-gradient(135deg, var(--green), #0d7d42);
 }
 
+.support-panel {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: center;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at top left, rgba(14, 159, 81, 0.16), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(22, 115, 230, 0.14), transparent 28%),
+    var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  animation: rise-in 700ms ease both;
+}
+
+.support-panel h2 {
+  margin: 0;
+  font-family: "Sora", sans-serif;
+  font-size: clamp(1.9rem, 3.5vw, 3rem);
+}
+
+.support-panel p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.support-panel__actions {
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+}
+
+.support-panel__email {
+  color: var(--ink);
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(22, 115, 230, 0.25);
+}
+
+.product-page {
+  padding-top: 40px;
+}
+
+.product-hero {
+  display: grid;
+  grid-template-columns: 1fr 0.92fr;
+  gap: 28px;
+  align-items: center;
+  padding: 28px 0 20px;
+  animation: rise-in 700ms ease both;
+}
+
+.product-hero h1 {
+  margin: 0;
+  font-family: "Sora", sans-serif;
+  font-size: clamp(2.6rem, 5vw, 4.9rem);
+  line-height: 1;
+}
+
+.product-hero__lede {
+  max-width: 60ch;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.product-page__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.product-showcase,
+.detail-card,
+.media-card,
+.release-panel,
+.release-summary__card {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  animation: rise-in 700ms ease both;
+}
+
+.product-showcase {
+  min-height: 430px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(22, 115, 230, 0.18), transparent 32%),
+    radial-gradient(circle at bottom left, rgba(245, 182, 19, 0.18), transparent 32%),
+    rgba(255, 255, 255, 0.82);
+}
+
+.product-showcase__logo {
+  width: min(100%, 480px);
+  height: auto;
+  object-fit: contain;
+}
+
+.detail-grid,
+.media-grid,
+.release-summary {
+  display: grid;
+  gap: 22px;
+}
+
+.detail-grid,
+.media-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.detail-card,
+.media-card,
+.release-panel,
+.release-summary__card {
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.detail-card h3,
+.media-card h3,
+.release-panel h3,
+.release-summary__card h4 {
+  margin-top: 0;
+  font-family: "Sora", sans-serif;
+}
+
+.detail-card p,
+.media-card p,
+.release-panel p,
+.release-summary__card li {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.media-card {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.92)),
+    linear-gradient(135deg, rgba(22, 115, 230, 0.18), rgba(245, 182, 19, 0.15));
+}
+
+.media-card--image {
+  padding: 12px;
+  justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+}
+
+.media-card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 22px;
+  border: 1px solid rgba(21, 48, 75, 0.08);
+}
+
+.media-card__content {
+  padding: 18px 12px 8px;
+}
+
+.media-card--video {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.94)),
+    linear-gradient(135deg, rgba(255, 75, 55, 0.22), rgba(22, 115, 230, 0.14));
+}
+
+.release-panel__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 22px;
+}
+
+.release-summary {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.release-summary__card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
 @media (max-width: 1120px) {
   .hero,
+  .support-panel,
+  .product-hero,
   .products-grid,
+  .detail-grid,
+  .media-grid,
+  .release-summary,
   .story-grid,
   .updates-grid,
   .launch-grid {
@@ -526,6 +755,10 @@ body::before {
 
   .hero h1 {
     max-width: none;
+  }
+
+  .product-showcase {
+    min-height: 320px;
   }
 }
 
@@ -568,7 +801,11 @@ body::before {
   }
 
   .product-card__logo {
-    width: 72px;
-    height: 72px;
+    width: 108px;
+    height: 108px;
+  }
+
+  .release-panel__header {
+    flex-direction: column;
   }
 }
