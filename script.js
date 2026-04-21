@@ -58,6 +58,11 @@ function renderProducts() {
     const node = productTemplate.content.firstElementChild.cloneNode(true);
 
     node.dataset.filters = product.filterTags.join(" ");
+    if (product.status) {
+      const status = node.querySelector(".product-card__status");
+      status.textContent = product.status;
+      status.classList.add("is-visible");
+    }
     node.querySelector(".product-card__logo").src = product.logo;
     node.querySelector(".product-card__logo").alt = `${product.name} logo`;
     if (product.logoClass) {

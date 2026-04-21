@@ -202,11 +202,11 @@ const rdUtilitiesData = {
       name: "Shanghai / Nanna's Rummy",
       logo: "./Logos/Shanghai & Nanna's Rummy logo.png",
       logoClass: "product-card__logo--wide",
-      platforms: ["Web", "Mobile"],
+      platforms: ["Web", "PWA"],
       filterTags: ["web"],
       category: "Game Project",
       summary:
-        "A browser-based rummy experience featuring both Shanghai and Nanna's Rummy, playable solo or multiplayer on the web and mobile devices.",
+        "A progressive web app featuring both Shanghai and Nanna's Rummy, playable solo or multiplayer across desktop and mobile-friendly browsers.",
       noteParts: [
         { type: "text", text: "For multiplayer, open " },
         {
@@ -222,11 +222,31 @@ const rdUtilitiesData = {
       features: [
         "Choose between two distinct rummy variants",
         "Support for single-player and multiplayer",
-        "Designed to play on web and mobile"
+        "Installable as a progressive web app"
       ],
       actions: [
         { label: "View Details", href: "./shanghai-nannas-rummy.html" },
         { label: "Play Online", href: "http://snrummy-web.onrender.com" }
+      ]
+    },
+    {
+      name: "Naval War",
+      logo: "./Logos/NavalWar/navalWarLogo-Transparent.png",
+      logoClass: "product-card__logo--wide",
+      status: "Coming Soon",
+      platforms: ["Web", "Mobile"],
+      filterTags: ["web"],
+      category: "Game Project",
+      summary:
+        "A web-based naval card battle inspired by WWII fleet combat, where players command ships, fire salvos, deploy special cards, and fight to build the strongest victory pile.",
+      features: [
+        "Four-player fleet combat with ship and play decks",
+        "Skirmish and campaign-style victory paths",
+        "Salvos, mines, submarines, torpedo boats, air strikes, repairs, and smoke"
+      ],
+      actions: [
+        { label: "View Details", href: "./naval-war.html" },
+        { label: "Play Online Coming Soon", href: "#" }
       ]
     }
   ],
