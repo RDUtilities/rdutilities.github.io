@@ -89,7 +89,7 @@ const rdUtilitiesData = {
         { label: "View Details", href: "./soundchoice-supertool.html" },
         {
           label: "Download v1.0",
-          href: "https://github.com/RDUtilities/SoundChoiceSuperTool/releases/download/v1.0.0/SoundChoiceSuperTool-v1.0.0-macOS.zip"
+          href: "https://github.com/RDUtilities/Downloads/releases/download/soundchoicesupertool-v1.0.0/SoundChoiceSuperTool-v1.0.0-macOS.zip"
         }
       ]
     },
