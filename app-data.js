@@ -64,7 +64,7 @@ const rdUtilitiesData = {
         { label: "View Details", href: "./logsupertool.html" },
         {
           label: "Download PC v1.0.1",
-          href: "https://github.com/RDUtilities/LogSuperTool/releases/download/v1.0.1/LogSuperTool-v1.0.1-win-x64-single.zip"
+          href: "https://github.com/RDUtilities/Downloads/releases/download/logsupertool-v1.0.1/LogSuperTool-v1.0.1-win-x64-single.zip"
         },
         {
           label: "Download Mac v1.0.0",
