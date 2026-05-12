@@ -152,7 +152,7 @@ const rdUtilitiesData = {
         { label: "View Details", href: "./steamgameserver-patch-tool.html" },
         {
           label: "Download v1.0.0",
-          href: "https://github.com/RDUtilities/SteamGameServerPatchTool/releases/download/v1.0.0/SteamGameServerPatchTool-v1.0.0-win-x64.zip"
+          href: "https://github.com/RDUtilities/Downloads/releases/download/steam-game-server-patch-tool-v1.0.0/SteamGameServerPatchTool-v1.0.0-win-x64.zip"
         }
       ]
     },
