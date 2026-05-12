@@ -110,7 +110,7 @@ const rdUtilitiesData = {
         { label: "View Details", href: "./speakshot.html" },
         {
           label: "Download v1.2",
-          href: "https://github.com/RDUtilities/SpeakShot/releases/download/v1.2/SpeakShot-v1.2.zip"
+          href: "https://github.com/RDUtilities/Downloads/releases/download/speakshot-v1.2/SpeakShot-v1.2.zip"
         }
       ]
     },
