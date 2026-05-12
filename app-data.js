@@ -17,7 +17,7 @@ const rdUtilitiesData = {
         { label: "View Details", href: "./robocopy-supertool.html" },
         {
           label: "Download v1.5",
-          href: "https://github.com/RDUtilities/RobocopyGUI/releases/download/v1.5/RobocopySuperTool.exe"
+          href: "https://github.com/RDUtilities/Downloads/releases/download/robocopysupertool-v1.5/RobocopySuperTool.exe"
         }
       ]
     },
