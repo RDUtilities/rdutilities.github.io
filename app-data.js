@@ -233,7 +233,6 @@ const rdUtilitiesData = {
       name: "Naval War",
       logo: "./Logos/NavalWar/navalWarLogo-Transparent.png",
       logoClass: "product-card__logo--wide",
-      status: "Coming Soon",
       platforms: ["Web", "Mobile"],
       filterTags: ["web"],
       category: "Game Project",
@@ -246,7 +245,7 @@ const rdUtilitiesData = {
       ],
       actions: [
         { label: "View Details", href: "./naval-war.html" },
-        { label: "Play Online Coming Soon", href: "#" }
+        { label: "Play Online", href: "https://naval-war.onrender.com" }
       ]
     }
   ],
