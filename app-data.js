@@ -42,7 +42,7 @@ const rdUtilitiesData = {
         },
         {
           label: "Download Mac v2.0.0",
-          href: "https://github.com/RDUtilities/ADSuperSearchToolME/releases/download/v2.0.0/ADSuperSearch-Mac-Edition-Release.zip"
+          href: "https://github.com/RDUtilities/Downloads/releases/download/ad-supersearch-mac-edition-v2.0.0/ADSuperSearch-Mac-Edition-Release.zip"
         }
       ]
     },
