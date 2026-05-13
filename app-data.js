@@ -38,7 +38,7 @@ const rdUtilitiesData = {
         { label: "View Details", href: "./ad-supersearch.html" },
         {
           label: "Download PC v2.5",
-          href: "https://github.com/RDUtilities/ADSearchToolNew/releases/download/v2.5-security/AD.Super.Search.v2.5.zip"
+          href: "https://github.com/RDUtilities/Downloads/releases/download/ad-super-search-v2.5-security/AD.Super.Search.v2.5.zip"
         },
         {
           label: "Download Mac v2.0.0",
