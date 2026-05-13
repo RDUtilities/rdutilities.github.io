@@ -172,8 +172,8 @@ const rdUtilitiesData = {
       actions: [
         { label: "View Details", href: "./dollars-and-sense.html" },
         {
-          label: "Download v3.1",
-          href: "https://github.com/RDUtilities/DollarsAndSense/releases/download/v3.1-smartbulk/DollarsAndSense-v3.1.zip"
+          label: "Download v3.2",
+          href: "https://github.com/RDUtilities/DollarsAndSense/releases/download/v3.2-gpt54/DollarsAndSense-v3.2-gpt54-macOS.zip"
         }
       ]
     },
