@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talk Type Super Tool | RDUtilities</title>
+    <meta
+      name="description"
+      content="Talk Type Super Tool is a local dictation app that transcribes speech on-device and pastes it into the app you are already using."
+    />
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="./index.html" aria-label="RDUtilities home">
+          <img src="./Logos/RDUtilitiesLogo.png" alt="RDUtilities logo" class="brand__logo" />
+        </a>
+        <nav class="topbar__nav" aria-label="Primary">
+          <a href="./index.html#products">Products</a>
+          <a href="#features">Features</a>
+          <a href="#media">Media</a>
+          <a href="#release-notes">Release Status</a>
+        </nav>
+      </header>
+
+      <main class="product-page">
+        <section class="product-hero">
+          <div class="product-hero__copy">
+            <p class="eyebrow">Local dictation and transcription</p>
+            <h1>Talk Type Super Tool</h1>
+            <p class="product-hero__lede">
+              Talk Type Super Tool is a tray-based dictation app that runs locally,
+              listens with a global hotkey, transcribes speech on-device, and pastes
+              the result into the app you are already using.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary product-link--disabled" href="#" aria-disabled="true">Windows Release Coming Soon</a>
+              <a class="button button--secondary product-link--disabled" href="#" aria-disabled="true">Mac Version In Progress</a>
+            </div>
+            <div class="product-page__pills">
+              <span class="product-chip">Speech to Text</span>
+              <span class="platform-pill">Windows</span>
+              <span class="platform-pill">macOS</span>
+            </div>
+          </div>
+
+          <aside class="product-hero__art" aria-label="Talk Type Super Tool logo">
+            <div class="product-showcase">
+              <img src="./Logos/TalkTypeSuperToolLogo.png" alt="Talk Type Super Tool logo" class="product-showcase__logo" />
+            </div>
+          </aside>
+        </section>
+
+        <section class="section" id="features">
+          <div class="section-heading">
+            <p class="eyebrow">Product overview</p>
+            <h2>Fast local dictation without a cloud transcription workflow</h2>
+            <p>
+              The Windows edition is built around a WPF shell with a local speech
+              worker so everyday dictation can stay fast, private, and easy to drop
+              into normal desktop apps. The Mac edition is planned as the next step.
+            </p>
+          </div>
+          <div class="detail-grid">
+            <article class="detail-card">
+              <h3>Tray-first workflow</h3>
+              <p>
+                Talk Type Super Tool stays out of the way in the system tray while
+                giving you quick access to settings, model management, diagnostics,
+                transcript history, and dictation controls.
+              </p>
+            </article>
+            <article class="detail-card">
+              <h3>Flexible dictation modes</h3>
+              <p>
+                Use a global hotkey for either toggle dictation or push-to-talk,
+                then paste the transcript directly into the active app with optional
+                cleanup modes and voice-command punctuation support.
+              </p>
+            </article>
+            <article class="detail-card">
+              <h3>Local model control</h3>
+              <p>
+                Download and manage local speech models, review startup diagnostics,
+                and keep transcription on-device without sending raw microphone
+                audio to a cloud service.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="media">
+          <div class="section-heading">
+            <p class="eyebrow">Screenshots and video</p>
+            <h2>Ready for settings, overlay, and workflow demos</h2>
+            <p>
+              This page is ready for screenshots of the tray menu, settings, model
+              manager, live dictation overlay, transcript preview, and future
+              Windows or Mac walkthrough videos.
+            </p>
+          </div>
+          <div class="media-grid">
+            <article class="media-card">
+              <h3>Tray and settings</h3>
+              <p>Use this slot for the main settings window and hotkey controls.</p>
+            </article>
+            <article class="media-card">
+              <h3>Live overlay</h3>
+              <p>Show the small overlay pill with dictation state and preview text.</p>
+            </article>
+            <article class="media-card media-card--video">
+              <h3>Dictation demo</h3>
+              <p>Embed a short walkthrough that shows start, dictate, transcribe, and paste.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="release-notes">
+          <div class="section-heading">
+            <p class="eyebrow">Release status</p>
+            <h2>Windows ready, public release pending</h2>
+            <p>
+              The Windows build is complete and already packaged as a portable app.
+              The current GitHub release is still in draft review, so the public
+              website is holding the download button until that release is published.
+            </p>
+          </div>
+          <div class="release-panel">
+            <div class="release-panel__header">
+              <div>
+                <h3>Current plan</h3>
+                <p>Publish the Windows portable build first, then add the Mac edition as development continues.</p>
+              </div>
+              <div class="product-card__actions">
+                <a class="product-link product-link--primary product-link--disabled" href="#" aria-disabled="true">Windows Release Coming Soon</a>
+                <a class="product-link product-link--disabled" href="#" aria-disabled="true">Mac Version In Progress</a>
+              </div>
+            </div>
+            <div class="release-summary">
+              <article class="release-summary__card">
+                <h4>Windows release highlights</h4>
+                <ul>
+                  <li>Portable Lite package with embedded Python runtime</li>
+                  <li>Local model download and cache management</li>
+                  <li>Toggle and push-to-talk dictation with paste automation</li>
+                </ul>
+              </article>
+              <article class="release-summary__card">
+                <h4>Planned next additions</h4>
+                <ul>
+                  <li>Public Windows download link</li>
+                  <li>Mac edition screenshots and progress updates</li>
+                  <li>Usage examples for cleanup modes and voice commands</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="support">
+          <div class="support-panel">
+            <div>
+              <p class="eyebrow">Product Support</p>
+              <h2>Need help with this product?</h2>
+              <p>
+                Email RDUtilities support for setup questions, troubleshooting,
+                or feedback, and include the product name and version if you can.
+              </p>
+            </div>
+            <div class="support-panel__actions">
+              <a class="button button--primary" href="mailto:Support@rdutilties.tech">
+                Email Support
+              </a>
+              <a class="support-panel__email" href="mailto:Support@rdutilties.tech">
+                Support@rdutilties.tech
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -115,6 +115,21 @@ const rdUtilitiesData = {
       ]
     },
     {
+      name: "Talk Type Super Tool",
+      logo: "./Logos/TalkTypeSuperToolLogo.png",
+      platforms: ["Windows", "macOS"],
+      filterTags: ["windows", "mac", "cross-platform"],
+      category: "Speech to Text",
+      summary:
+        "A local dictation app that lives in the tray, listens with a global hotkey, transcribes speech on-device, and pastes the result into the app you are already using.",
+      features: [
+        "Local speech-to-text with selectable models",
+        "Global hotkey dictation with toggle and push-to-talk modes",
+        "Windows edition finished, Mac edition in progress"
+      ],
+      actions: [{ label: "View Details", href: "./talk-type-supertool.html" }]
+    },
+    {
       name: "WinGet SuperTool",
       logo: "./Logos/WinGetSuperToolLogo.png",
       platforms: ["Windows"],
