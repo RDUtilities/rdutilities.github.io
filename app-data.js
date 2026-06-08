@@ -127,7 +127,13 @@ const rdUtilitiesData = {
         "Global hotkey dictation with toggle and push-to-talk modes",
         "Windows edition finished, Mac edition in progress"
       ],
-      actions: [{ label: "View Details", href: "./talk-type-supertool.html" }]
+      actions: [
+        { label: "View Details", href: "./talk-type-supertool.html" },
+        {
+          label: "Download Windows v1.0",
+          href: "https://github.com/RDUtilities/Downloads/releases/download/talk-type-super-tool-v1.0.0/TalkType-Portable-Lite.zip"
+        }
+      ]
     },
     {
       name: "WinGet SuperTool",
