@@ -151,8 +151,8 @@ const rdUtilitiesData = {
       actions: [
         { label: "View Details", href: "./winget-supertool.html" },
         {
-          label: "Download v1.0.0",
-          href: "https://github.com/RDUtilities/Downloads/releases/download/winget-super-tool-v1.0.0/WinGetTool.exe"
+          label: "Download v1.1.0",
+          href: "https://github.com/RDUtilities/Downloads/releases/download/winget-super-tool-v1.1.0/WinGetSuperTool.zip"
         }
       ]
     },
