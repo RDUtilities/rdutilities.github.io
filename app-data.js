@@ -63,12 +63,12 @@ const rdUtilitiesData = {
       actions: [
         { label: "View Details", href: "./logsupertool.html" },
         {
-          label: "Download PC v1.0.1",
-          href: "https://github.com/RDUtilities/Downloads/releases/download/logsupertool-v1.0.1/LogSuperTool-v1.0.1-win-x64-single.zip"
+          label: "Download PC v1.1.0",
+          href: "https://github.com/RDUtilities/Downloads/releases/download/logsupertool-v1.1.0/LogSuperTool.exe"
         },
         {
-          label: "Download Mac v1.0.0",
-          href: "https://github.com/RDUtilities/LogSuperTool-MacEdition/releases/download/v1.0.0/LogSuperToolMacEdition-1.0.0.dmg"
+          label: "Download Mac v1.0.1",
+          href: "https://github.com/RDUtilities/LogSuperTool-MacEdition/releases/download/v1.0.1/LogSuperToolMacEdition-1.0.1-macos.zip"
         }
       ]
     },
